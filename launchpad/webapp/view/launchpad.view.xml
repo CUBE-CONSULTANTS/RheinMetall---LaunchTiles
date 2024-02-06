@@ -1,7 +1,7 @@
 <mvc:View controllerName="launchpad.launchpad.controller.launchpad"
     xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
     xmlns="sap.m">
-    <Page id="page" showFooter="true" showSubHeader="false" class="sapUiResponsivePadding--header sapUiResponsivePadding--subHeader" >
+    <Page id="page"  showSubHeader="false" class="sapUiResponsivePadding--header sapUiResponsivePadding--subHeader page" >
         
         <headerContent >
 
@@ -10,7 +10,7 @@
             <Image src="../public/images/Rheinmetall_Logo_2021.jpg" width="130.0000px"></Image>
 
         </headerContent>
-        <VBox>
+        <VBox width="90%" class="prova">
             <OverflowToolbar height="6vh" design="Solid" class="sapUiResponsiveMargin sapUiTinyMarginTop" >
                 <Text class="sapUiTinyMarginBegin welcome"  text="Benvenuto Utente"></Text>
                 <ToolbarSpacer ></ToolbarSpacer>
@@ -18,7 +18,10 @@
             </OverflowToolbar>
            
         </VBox>
-        <VBox direction="Row" class="sapUiLargeMarginTop" justifyContent="SpaceAround">
+        <content>
+            
+       
+        <VBox width="60%" direction="Row" class="sapUiLargeMarginTop prova" justifyContent="SpaceAround">
             
             <GenericTile class="sapUiResponsiveMargin tileLayout" header="Qualifica Fornitori"  press="onPress"
              >
@@ -42,7 +45,7 @@
             </TileContent>
         </GenericTile>
         </VBox>
-
+    </content>
         <footer >
             <OverflowToolbar class="footer" design="Solid" style="Standard" >
                 <Button text="LogOut" type="Neutral" icon="sap-icon://log"></Button>

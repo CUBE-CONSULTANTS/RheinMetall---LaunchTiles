@@ -1,6 +1,9 @@
 /* Enter your custom styles here */
 .prova{
-  background: red !important;
+  margin: auto;
+}
+.page content{
+  border: 3px solid black!important
 }
 .welcome{
   font-size: larger;
