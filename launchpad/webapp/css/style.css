@@ -1,0 +1,11 @@
+/* Enter your custom styles here */
+.prova{
+  background: red !important;
+}
+.welcome{
+  font-size: larger;
+  font-weight: 700;
+}
+.footer{
+  background: #305074!important;
+}

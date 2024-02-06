@@ -1,0 +1,52 @@
+<mvc:View controllerName="launchpad.launchpad.controller.launchpad"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" showFooter="true" showSubHeader="false" class="sapUiResponsivePadding--header sapUiResponsivePadding--subHeader" >
+        
+        <headerContent >
+
+            <Image class="sapUiTinyMarginBegin" src="../public/images/login.svg"></Image>
+            <ToolbarSpacer ></ToolbarSpacer>
+            <Image src="../public/images/Rheinmetall_Logo_2021.jpg" width="130.0000px"></Image>
+
+        </headerContent>
+        <VBox>
+            <OverflowToolbar height="6vh" design="Solid" class="sapUiResponsiveMargin sapUiTinyMarginTop" >
+                <Text class="sapUiTinyMarginBegin welcome"  text="Benvenuto Utente"></Text>
+                <ToolbarSpacer ></ToolbarSpacer>
+                <Title text="Portale Fornitori" titleStyle="H3" ></Title>
+            </OverflowToolbar>
+           
+        </VBox>
+        <VBox direction="Row" class="sapUiLargeMarginTop" justifyContent="SpaceAround">
+            
+            <GenericTile class="sapUiResponsiveMargin tileLayout" header="Qualifica Fornitori"  press="onPress"
+             >
+            <TileContent>
+                <ImageContent class="content" src="sap-icon://doc-attachment" />
+            </TileContent>
+        </GenericTile>
+    
+        <GenericTile class="sapUiResponsiveMargin tileLayout" header="Lista Richieste di Offerta"
+             press="press" >
+            <TileContent >
+                <ImageContent  class="icon" src="sap-icon://add-activity" />
+            
+            </TileContent>
+        </GenericTile>
+    
+        <GenericTile class="sapUiResponsiveMargin tileLayout" header="Lista Ordini di Acquisto"
+            press="press">
+            <TileContent >
+                <ImageContent class="icon" src="sap-icon://activity-2" />
+            </TileContent>
+        </GenericTile>
+        </VBox>
+
+        <footer >
+            <OverflowToolbar class="footer" design="Solid" style="Standard" >
+                <Button text="LogOut" type="Neutral" icon="sap-icon://log"></Button>
+            </OverflowToolbar>
+        </footer>
+    </Page>
+</mvc:View>
